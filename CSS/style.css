@@ -8,16 +8,28 @@ html, body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-  z-index: 1;
+header{
+  z-index: 2;
   height: 70px;
   background-color: rgba(255,105,0,255);
-  display: flex;
-  justify-content: space-around;
-  padding: 21px 0;
   position: fixed;
   width: 100%;
+  padding: 21px 0;
   box-shadow: 1px 1px 1px 1px rgb(110, 110, 110);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav, .container{
+  width: 75%;
+  max-width: 1440px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav ul{
@@ -26,7 +38,7 @@ nav ul{
 }
 
 nav img{
-  height: 2.5rem;
+  height: 40px;
 }
 
 .container{
@@ -45,11 +57,13 @@ nav img{
 .row{
   width: 100%;
   display: flex;
+  gap: 32px;
 }
 
 .col{
   width: 33%;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .product-card{
@@ -58,13 +72,11 @@ nav img{
 }
 
 .product-card img{
-  padding: 32px;
   max-width: 100%;
   max-height: 100%;
 }
 
 .product-card img:nth-child(2){
-  padding: 32px;
   max-width: 100%;
   max-height: 100%;
   position: absolute;
@@ -78,9 +90,10 @@ nav img{
 
 .favourite{
   font-size: 40px;
+  z-index: 1;
   position: absolute;
-  top: 40px;
-  right: 32px;
+  top: 12px;
+  right: 0;
   background-color: white;
   padding: 8px 16px;
 }
@@ -91,8 +104,7 @@ nav img{
 
 .labels{
   position: absolute;
-  left: 32px;
-  bottom: 64px;
+  bottom: 48px;
   color: white;
   font-weight: bold;
   font-size: 14px;
@@ -100,7 +112,7 @@ nav img{
 
 .sale, .sustainability{
   display: inline-block;
-  padding: 5px;
+  padding: 5px 9px;
 }
 
 .sale{
@@ -111,7 +123,39 @@ nav img{
   background-color: green;
 }
 
-footer > div{
+.description p{
+  text-decoration: none;      /* non funziona */
+}
+
+.description p:nth-child(1), .description p:nth-child(2), .description p:nth-child(4){
+  color: black;
+}
+
+.description p:nth-child(3), .description p:nth-child(4){
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.description p:nth-child(2){
+  font-weight: bold;
+}
+
+.description p:nth-child(3){
+  font-weight: bold;
+  color: red;
+  margin-right: 5px;
+}
+
+footer{
   height: 100px;
   background-color: rgba(26,26,26,255);
+}
+
+.f-container{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.f-container p{
+  color: white;
 }
