@@ -110,3 +110,8 @@ nav img{
 .sustainability{
   background-color: green;
 }
+
+footer > div{
+  height: 100px;
+  background-color: rgba(26,26,26,255);
+}
