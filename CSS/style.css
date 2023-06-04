@@ -45,7 +45,7 @@ nav img{
   height: 40px;
 }
 
-.container{
+.container{       /* inizio main */
   display: flex;
   width: 75%;
   max-width: 1440px;
@@ -179,4 +179,5 @@ footer span {
 
 footer a {
   color: white;
+  margin-right: 7px;
 }
