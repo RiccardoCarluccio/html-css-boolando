@@ -37,6 +37,10 @@ nav ul{
   display: flex;
 }
 
+a {
+  text-decoration: none;
+}
+
 nav img{
   height: 40px;
 }
@@ -156,6 +160,10 @@ footer{
   align-items: center;
 }
 
-.f-container p{
+.f-container{
+  color: white;
+}
+
+footer a {
   color: white;
 }
