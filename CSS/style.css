@@ -41,6 +41,12 @@ a {
   text-decoration: none;
 }
 
+header a {
+  margin-right:7px;
+  color: white;
+  font-weight: 600;
+}
+
 nav img{
   height: 40px;
 }
